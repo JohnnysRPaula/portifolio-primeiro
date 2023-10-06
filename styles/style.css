@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap'); /*importando fontes*/
+*{
+    /* retirando as margem padrao*/
+    margin: 0; 
+    padding: 0;
+}
+:root{ /*variaveis de cor*/
+    --cor-primaria: #000000;
+    --cor-segundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-Hover:#272727;
+    --font-principal: 'Krona One', sans-serif;
+    --font-segundaria: 'Montserrat', sans-serif;
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+
+}
+.cabecalho__menu__link{
+    font-family: var(--font-segundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;/*tirando a barra do link*/
+}
+
+body{
+    box-sizing: border-box; 
+    background-color:var(--cor-primaria); /*cor de fundo*/
+    color: var(--cor-segundaria); 
+}
+.apresentacao{/*ultilizando um class*/
+    padding: 5% 15%;/* definindo as margem do site*/
+    display: flex;
+    align-items: center; /*centralizando o texto*/
+    justify-content: space-between; /*colocando um margem entre o texo e a foto */
+    gap: 80px;
+}
+.apresentacao__conteudo{/*ultilizando um class*/
+    width: 50%; /*definindo o tanhado do texto*/
+    display: flex; /*ultilizando o flexbox*/
+    flex-direction: column; /*direcionando o texto em coluna*/
+    gap: 40px; /*definindo o espaço entre texto e titulo*/
+}
+.apresentacao__conteudo__titulo{ /*ultilizando um class*/
+    font-size: 2.25rem; /* definindo o tamanho do titulo*/
+    font-family: var(--font-principal) /*definindo a fonte*/
+}
+.Titulo-destaque{ /*ultilizando um class*/
+    color: var(--cor-terciaria);
+}
+.apresentacao__conteudo__texto{ /*ultilizando um class*/
+    font-size: 1.5rem; /* definindo o tamanho o texto*/
+    font-family: var(--font-segundaria)/* definindo a fonte*/
+}
+.apresentacao__link{ /*ultilizando um class*/
+    font-size: 2.18rem; /* tamanho da fonte*/
+    display: flex;/*ultilizando o flexbox*/
+    flex-direction: column;/*direcionando os botao em coluna*/
+    justify-content: space-between;
+    align-items: center; /* centralizando os botao*/
+    gap: 32px;/*espaço entre os botao*/
+}
+.apresentacao__link__subtitulo{
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.apresentacao__link__navegacao{ /*ultilizando um class*/
+    
+    display: flex; /*adicionando flexbox*/
+    justify-content: center;/*traz os elementos para o centro*/
+    border: 2px solid var(--cor-terciaria); /*fazendo as borda do botao*/
+    color: var(--cor-segundaria);/*cor dos link*/
+    width: 50%;/*tamanho dos botao*/
+    text-align: center; /*centralizando link*/
+    border-radius: 8px; /*aredondando as ponta do batao*/
+    font-size: 1.5rem; /*tamanho das fonte do link*/
+    font-weight: 600;
+    padding: 21.5px 0; /*ajustando as bordas do botao*/
+    text-decoration: none;/*tirando a barra do link*/
+    font-family: var(--font-segundaria); /*definindo fonte */
+    gap: 16px;
+}
+.apresentacao__link__link:hover{ /*Hover para animação do botao quando passar por cima*/
+    background-color: var(--cor-Hover);
+
+}
+.apresentacao__imagem{
+    width: 50%;
+}
+.rodape{
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--font-segundaria);
+    font-size: 1.5rem;
+}
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+    flex-direction: column-reverse;
+    padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: 50%;
+    }
+   
+}
+
