@@ -115,6 +115,13 @@ body{
     .apresentacao__conteudo{
         width: 50%;
     }
+    .apresentacao__link__subtitulo{
+        width: 100%;
+        
+    }
+    .apresentacao__link__navegacao{
+width: 100%;
+    }
    
 }
 
