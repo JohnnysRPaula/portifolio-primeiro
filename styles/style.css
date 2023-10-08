@@ -113,7 +113,7 @@ body{
     padding: 5%;
     }
     .apresentacao__conteudo{
-        width: 50%;
+        width: 100%;
     }
     .apresentacao__link__subtitulo{
         width: 100%;
@@ -122,6 +122,9 @@ body{
     .apresentacao__link__navegacao{
 width: 100%;
     }
+.apresentacao__imagem{
+    width: 100%;
+}
    
 }
 
