@@ -105,9 +105,13 @@ body{
     .cabecalho{
         padding: 10%;
     }
+    .cabecalho__menu__link{
+        font-size: 1rem;
+    }
     .cabecalho__menu{
         justify-content: center;
         gap: 10%;
+        
     }
     .apresentacao{
     flex-direction: column-reverse;
