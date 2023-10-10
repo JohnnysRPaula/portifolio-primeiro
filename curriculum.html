@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -28,5 +29,34 @@
             
         </section>
     </main>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Certificados</h2>
+        <div class="swiper">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./imagem/Captura de tela 2023-10-10 181157.png" alt="Livro sobre apache kafka"></div>
+              <div class="swiper-slide"><img src="./imagem/Captura de tela 2023-10-10 180922.png" alt="Livro sobre Liderança"></div>
+              <div class="swiper-slide"><img src="./imagem/Captura de tela 2023-10-10 181236.png" alt="Livro sobre javascript"></div>
+              <div class="swiper-slide"><img src="./imagem/Captura de tela 2023-10-10 180922.png" alt="Livro sobre Liderança"></div>
+              <div class="swiper-slide"><img src="./imagem/Captura de tela 2023-10-10 181236.png" alt="Livro sobre javascript"></div>
+              
+            </div>
+            <div class="swiper-pagination"></div>
+            
+            </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+      <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 100,
+            slidesPerView: 3,
+            pagination:{
+                el:'.swiper-pagination',
+                type:'bullets',
+            },
+        });
+      </script>
 </body>
 </html>
